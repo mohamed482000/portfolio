@@ -1,0 +1,112 @@
+/* The actual timeline (the vertical ruler) */
+.main-timeline-5 {
+    position: relative;
+    max-width:120%;
+    margin: 0 0  200px 0;
+  }
+.timeline-5 .card{
+    background-color: #f2f3f7;
+    border: 0;
+}
+  /* The actual timeline (the vertical ruler) */
+.main-timeline-5::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    background-color: #f2f3f7;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    margin-left: -3px;
+    z-index: 0;
+}
+  
+  /* Container around content */
+.timeline-5 {
+    position: relative;
+    width: 100%;
+    
+}
+  
+  /* The circles on the timeline */
+.circle {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: -24px;
+    top: 8px;
+    border-radius: 50%;
+    z-index: 2;
+    border: 5px solid #f2f3f7 ;
+}
+.circle-one {
+    background-color: #2c98f0;
+}
+.circle-two  {
+    background-color: #ec5453;
+}
+.circle-three {
+    background-color: #f9bf3f;
+}
+.circle-four {
+    background-color: #a84cb8;
+}
+.circle i{
+    font-size: 16px;
+    margin:9px 0 0  9px;
+    color: #fff;
+}
+.impaty-circle {
+    border: 5px solid #f2f3f7 ;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -18px;
+    bottom: -30px;
+    border-radius: 50%;
+    z-index: 2;
+}
+  
+  /* Place the container to the right */
+.right-5 {
+    padding: 0px 0px 20px 40px;
+    left: auto;
+}
+  
+  /* Add arrows to the right container (pointing left) */
+.right-5::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #fff;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #f2f3f7 transparent transparent;
+}
+  
+  /* Fix the circle for containers on the right side */
+.right-5::after {
+    left: -10px;
+}
+  
+@media (max-width: 991px) {
+    .main-timeline-5 {
+      max-width: 100%;
+    }
+}
+.card-body h5{
+    text-transform: capitalize;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+.card-body span{
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.6);
+}
+.card-body p{
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 30px;
+    font-size: 15px;
+}

@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+
+.container{
+    list-style: none;
+}
+.bars h4{
+    font-weight: 400;
+    display: inline-block;
+    margin: 0.3em;
+    text-transform: uppercase;
+}
+.bars li{
+    margin: 1.2em 0;
+}
+.bars .bar{
+    background: #ececec;
+    display: block;
+    border: 1px solid 8px #ececec;
+    border-radius: 1em;
+    overflow: hidden;
+    height: 1.8em;
+    box-shadow: -6px -6px 7px rgba(255, 255, 255, 0.5),
+    7px 7px 7px rgba(70, 70, 70, 0.12),
+    inset -6px -6px 7px rgba(255, 255, 255, 0.5),
+    inset 7px 7px 7px rgba(70, 70, 70, 0.12);
+    position: relative;
+}
+.bars .prog{
+    position: absolute;
+    left: 0;
+    transition: 1s;
+    top: 50%;
+    height: 75%;
+    margin: 0 0.3em;
+    transform: translateY(-50%);
+    border-radius: 1em;
+    float: left;
+}
+/* animation: fill 1s ease-in; */
+
+.bars li:nth-child(1) .prog{
+    width: 10%;
+    background: linear-gradient( 90deg , #ffaf75 0% , #ff720d 100%);
+}
+.bars li:nth-child(2) .prog{
+    width: 10%;
+    background: linear-gradient( 90deg , #7eb9f1 0% , #2187e7 100%);
+}
+.bars li:nth-child(3) .prog{
+    width: 10%;
+    background: linear-gradient( 90deg , #ffef75 0% , #ffe30d 100%);
+}
+.bars li:nth-child(4) .prog{
+    width: 10%;
+    background: linear-gradient( 90deg , #ff7575 0% , #ff0d0d 100%);
+}
+.bars li:nth-child(5) .prog{
+    width: 10%;
+    background: linear-gradient( 90deg , #cc75ff 0% , #a60dff 100%);
+}
+/* @keyframes fill {
+    0% {width: 0;}
+}
+@media screen and (max-width:600px) {
+    .container{
+        width: 90%;
+    }
+} */
