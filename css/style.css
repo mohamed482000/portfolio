@@ -481,7 +481,8 @@ h2 {
   flex-wrap: wrap;
 }
 .second-project,
-.fourth-project {
+.fourth-project,
+.fifth-project {
   justify-content: flex-end;
 }
 .second-project .project-img {
@@ -492,6 +493,9 @@ h2 {
 }
 .fourth-project .project-img {
   background-image: url(../img/React-shopping-cart.png);
+}
+.fifth-project .project-img {
+  background-image: url(../img/React-Arab-shopping.png);
 }
 .each-project .project-img:hover {
   background-position: bottom;
@@ -505,7 +509,8 @@ h2 {
   width: 45%;
 }
 .second-project .project-info,
-.fourth-project .project-info {
+.fourth-project .project-info,
+.fifth-project .project-info {
   margin-right: 30px;
   width: 45%;
 }
@@ -706,7 +711,8 @@ textarea {
     width: 90%;
   }
   .second-project,
-  .fourth-project {
+  .fourth-project,
+  .fifth-project {
     flex-wrap: wrap-reverse;
   }
   .first-section-content {
@@ -769,7 +775,8 @@ textarea {
     width: 90%;
   }
   .second-project,
-  .fourth-project {
+  .fourth-project,
+  .fifth-project {
     flex-wrap: wrap-reverse;
   }
 }
@@ -847,7 +854,8 @@ textarea {
     width: 90%;
   }
   .second-project,
-  .fourth-project {
+  .fourth-project,
+  .fifth-project {
     flex-wrap: wrap-reverse;
   }
 }
