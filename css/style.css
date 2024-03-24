@@ -476,7 +476,11 @@ h2 {
 .frist-project .project-img {
   background-image: url(../img/mohamed-magdy-portfolio.png);
 }
+.admin-dashboard-project .project-img {
+  background-image: url(../img/MUIAdminPage.png);
+}
 .frist-project,
+.admin-dashboard-project,
 .third-project {
   flex-wrap: wrap;
 }
@@ -504,10 +508,12 @@ h2 {
   color: rgb(216, 76, 76);
 }
 .frist-project .project-info,
+.admin-dashboard-project .project-info,
 .third-project .project-info {
   height: 100%;
   width: 45%;
 }
+
 .second-project .project-info,
 .fourth-project .project-info,
 .fifth-project .project-info {
@@ -710,6 +716,7 @@ textarea {
     margin: auto;
     width: 90%;
   }
+
   .second-project,
   .fourth-project,
   .fifth-project {
